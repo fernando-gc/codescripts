@@ -6,7 +6,7 @@ do
         FAIL_COUNT=`echo $LOOKUP_RES | grep ';; connection timed out; ' | wc -l`;
         if [ $FAIL_COUNT -eq 1 ]
         then
-             NAME='Bad FQDNS\n';
+             IP='Bad FQDNS\n';
         else
              IP=`echo $LOOKUP_RES | cut -f 5 -d ":" | sed 's/ //'`;
         fi
