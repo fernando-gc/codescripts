@@ -2,12 +2,13 @@
 
 for i in $( cat iplist.txt )
 do
-ping -q -c2 $i > /dev/null
+ping -q -c1 -W 1 $i > /dev/null
 
 if [ $? -eq 0 ]
 then
-echo $i "Pingable"
+echo $i "Ping"
 else
-echo $i "Not Pingable"
+echo $i "No-Ping"
 fi
 done
+
