@@ -4,4 +4,4 @@ Scripts and codes
 
 General use
 
-Many tools.
+Many tools to use.
