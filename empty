@@ -1,5 +1,7 @@
 # Determina si una variable está vacía o no.
 
+Casos:
+
 
 if [ -z "${VAR}" ]; then
     echo "VAR is unset or set to the empty string"
