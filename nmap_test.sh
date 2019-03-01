@@ -1,9 +1,11 @@
-#!/bin/sh
+#!/bin/bash
+PORT='6556'
+
 for IP in `cat ./nmap-ip.txt`
 do
         printf "$IP\t"
 
-        LOOKUP_RES=`nmap -p 6556 -Pn $IP`
+        LOOKUP_RES=`nmap -p $PORT -Pn $IP`
 
         FAIL_COUNT=`echo $LOOKUP_RES | grep "0 hosts up" | wc -l`;
         if [ $FAIL_COUNT -eq 1 ]
