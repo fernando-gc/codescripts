@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+
 for url in `cat ./url.txt`
 do
         printf "$url\t"
