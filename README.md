@@ -2,6 +2,6 @@
 
 Scripts and codes
 
-General use
+General use.
 
 Many tools to use.
