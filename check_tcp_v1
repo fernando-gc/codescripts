@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# Check TCP 
+
+
+SERVER=localhost
+PORT=80
+
+</dev/tcp/$SERVER/$PORT
+
+if [ "$?" -ne 0 ]; then
+  echo "Connection to $SERVER on port $PORT failed"
+  exit 2
+else
+  echo "Connection to $SERVER on port $PORT succeeded"
+  exit 0
+fi
