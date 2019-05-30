@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SERVER=localhost PORT=80
+if (: < /dev/tcp/$SERVER/$PORT) 2>/dev/null
+then
+    echo succeeded
+    exit 0
+else
+    echo  failed
+    exit 2
+fi
